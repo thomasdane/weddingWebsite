@@ -1,0 +1,18 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - "echo Start build and deployment"
+      - "echo Download from GitHub"
+  build:
+    commands:
+      - "echo Copy files to S3 bucket"
+      - "aws s3 cp * s3://tomamy --acl public-read"
+  post_build:
+    commands:
+      - "echo Clear previous version from cache"
+      - 'aws cloudfront create-invalidation --distribution-id E79P1CA6TY6UW --paths /*'
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: yes

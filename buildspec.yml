@@ -7,11 +7,11 @@ phases:
   build:
     commands:
       - "echo Copy files to S3 bucket"
-      - 'aws s3 sync . s3://tomamy --delete'
+      - 'aws s3 sync . s3://tomamy --delete --exclude ".git*"'
   post_build:
     commands:
       - "echo Clear previous version from cache"
-      - 'aws cloudfront create-invalidation --distribution-id E79P1CA6TY6UW --paths /*'
+      - 'aws cloudfront create-invalidation --distribution-id E79P1CA6TY6UW --paths "/*"'
 artifacts:
   files:
     - "**/*"

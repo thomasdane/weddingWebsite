@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 231);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 7em;
+    color: rgb(28,28,28);
+}
+
+h2, h3 {
+    font-weight: 100;
+    color: rgb(133, 133, 124);
+}
+
+h3 {
+    font-size: 12px;
+}
+
+.rsvp {
+    text-transform: uppercase;
+    font-weight: 400;
+    max-width: 475px;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+#info {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.header {
+    display: flex;
+}
+
+.header-top {
+    margin: -15px 0px;
+}
+
+.header-bottom {
+    margin: -35px 0px -18px 0px;
+}
+
+i, .and, a {
+    color: #729CA6;
+}
+
+.divider {
+    width: 100px;
+    height: 6px;
+    background-color: #729CA6;
+    margin-bottom: 30px;
+}
+
+img {
+    height: 100%;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.date {
+    font-weight: bold;
+    color: rgb(28,28,28);
+    margin-right: 10px;
+}
+
+.venue-link {
+    text-decoration: none;
+    color: rgb(28,28,28);
+}
+
+@media only screen and (max-width: 1025px) {
+    img {
+        width: 60%;
+        height: auto;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    .header-bottom {
+        margin: -25px 0px -18px 0px;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    #container {
+        display: block
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    #info {
+        margin: 20px 20px 30px 20px;
+    }
+  }

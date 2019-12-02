@@ -25,7 +25,7 @@ h2, h3 {
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .rsvp {
@@ -43,9 +43,6 @@ h3 {
 
 #info {
     margin: 40px;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
 }
 
 .header {
@@ -66,7 +63,7 @@ i, .and, a {
 
 .divider {
     width: 100px;
-    height: 6px;
+    min-height: 6px;
     background-color: #729CA6;
     margin-bottom: 30px;
 }
@@ -97,6 +94,9 @@ img {
     }
     h1 {
         font-size: 5em;
+    }
+    h3 {
+        font-size: 12px;
     }
     .header-bottom {
         margin: -25px 0px -18px 0px;

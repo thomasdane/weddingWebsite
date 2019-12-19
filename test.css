@@ -1,0 +1,39 @@
+.background {
+    background: #fff url("test.JPG") no-repeat fixed center bottom;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+h1, h2, h3, .date, .venue-link {
+    color: white;
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*highlights*/
+i, .and, a {
+    color: rgb(191, 190, 174);
+}
+.divider {
+    background-color: rgb(191, 190, 174);
+}
+
+@media only screen and (max-width: 750px) {
+	 h2 {
+	 	font-size: 1em;
+	 }
+	 h1 {
+	 	font-size: 4em;
+	 }
+	 .mb {
+	 	margin-bottom: 20px;
+	 }
+	 h3 {
+	 	font-size: 10px;
+	 }
+  }

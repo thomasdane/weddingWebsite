@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 231);
+    background-color: rgb(242, 239, 235);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
 }
@@ -15,17 +15,17 @@ h1, h2, h3 {
 
 h1 {
     font-weight: 800;
-    font-size: 7em;
+    font-size: 6.5em;
     color: rgb(28,28,28);
 }
 
 h2, h3 {
-    font-weight: 100;
+    font-weight: 200;
     color: rgb(133, 133, 124);
 }
 
 h3 {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .rsvp {
@@ -58,13 +58,13 @@ h3 {
 }
 
 i, .and, a {
-    color: #729CA6;
+    color: rgb(166, 165, 161);
 }
 
 .divider {
     width: 100px;
     min-height: 6px;
-    background-color: #729CA6;
+    background-color: rgb(166, 165, 161);
     margin-bottom: 30px;
 }
 
@@ -93,13 +93,34 @@ img {
         height: auto;
     }
     h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
-    h3 {
-        font-size: 12px;
+    h2 {
+        font-size: 1.3em;
     }
     .header-bottom {
         margin: -25px 0px -18px 0px;
+    }
+    .mb {
+        margin-bottom: 28px;
+    }
+  }
+
+@media only screen and (max-height: 700px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+  }
+
+@media only screen and (max-height: 600px) {
+    h2 {
+        font-size: 1.1em;
+    }
+    .mb {
+        margin-bottom: 22px;
     }
   }
 
@@ -113,5 +134,14 @@ img {
     }
     #info {
         margin: 20px 20px 30px 20px;
+    }
+    .mb {
+        margin-bottom: 22px;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    h1 {
+        font-size: 4.5em;
     }
   }

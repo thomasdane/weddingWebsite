@@ -58,13 +58,13 @@ h3 {
 }
 
 i, .and, a {
-    color: rgb(166, 165, 161);
+    color: #597580;
 }
 
 .divider {
     width: 100px;
     min-height: 6px;
-    background-color: rgb(166, 165, 161);
+    background-color: #597580;
     margin-bottom: 30px;
 }
 

@@ -5,7 +5,7 @@
     background-size: cover;
 }
 
-h1, h2, h3, .date, .venue-link {
+h1, h2, h3, .date, a, .venue-link {
     color: white;
 }
 
@@ -16,11 +16,17 @@ h1, h2, h3, .date, .venue-link {
 }
 
 /*highlights*/
-i, .and, a {
-    color: rgb(191, 190, 174);
+i, .and {
+  /*color: rgb(191, 190, 174);*/
+  /*color: rgb(190, 189, 191);*/
+  color: #CAC1B4;
+  /*color: #F2EDD8;*/
 }
 .divider {
-    background-color: rgb(191, 190, 174);
+  /*background-color: rgb(191, 190, 174);*/
+  /*background-color: rgb(190, 189, 191);*/
+  background-color:  #CAC1B4;
+  /*background-color: #F2EDD8;*/
 }
 
 @media only screen and (max-width: 750px) {
